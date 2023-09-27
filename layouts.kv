@@ -1,0 +1,128 @@
+#: import BgBoxLayout Custom_Layouts
+Interface:
+    hex_code: "#3085C3"
+    alpha: 1.0
+    padding: [20,20,20,20]
+    spacing: 20
+    orientation: "vertical"
+    size_hint: 1, 1
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text: "Kitab tap"
+            font_size: 30
+    BgBoxLayout:
+        size_hint: 1, 0.3
+        TextInput:
+            id: kitab_adi
+            size_hint: 1, 1
+            hint_text: "kitab adı daxil edin"
+            multiline: False
+            text: "səfillər"
+            font_size: 30
+        Button:
+            text: "Axtar"
+            size_hint: 0.3, 1
+            on_press: root.axtar()
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text_size: self.size
+            text: "Libraff"
+            font_size: 30
+            halign: 'left'
+            size_hint:0.3,1
+        Label:
+            id: libraff
+            text_size: self.size
+            text: ""
+            font_size: 30
+            halign: 'left'
+            size_hint: 1,1
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text_size: self.size
+            text: "Alinino"
+            font_size: 30
+            halign: 'left'
+            size_hint:0.3,1
+        Label:
+            id: alinino
+            text_size: self.size
+            text: ""
+            font_size: 30
+            halign: 'left'
+            size_hint: 1,1
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text_size: self.size
+            text: "Kitab al"
+            font_size: 30
+            halign: 'left'
+            size_hint:0.3,1
+        Label:
+            id: kitabal
+            text_size: self.size
+            text: ""
+            font_size: 30
+            halign: 'left'
+            size_hint: 1,1
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text_size: self.size
+            text: "Bookzone"
+            font_size: 30
+            halign: 'left'
+            size_hint:0.3,1
+        Label:
+            id: bookzone
+            text_size: self.size
+            text: ""
+            font_size: 30
+            halign: 'left'
+            size_hint: 1,1
+    BgBoxLayout:
+        hex_code: "#5CD2E6"
+        alpha: 1.0
+        size_hint: 1, None
+        height: self.minimum_height
+        padding: 20
+        Label:
+            text_size: self.size
+            text: "Kitabevim"
+            font_size: 30
+            halign: 'left'
+            size_hint:0.3,1
+        Label:
+            id: kitabevim
+            text_size: self.size
+            text: ""
+            font_size: 30
+            halign: 'left'
+            size_hint: 1,1
+    BgBoxLayout:
+        Label:
+            text: "kitabtap.com"
